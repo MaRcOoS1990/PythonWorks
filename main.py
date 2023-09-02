@@ -15,7 +15,7 @@
 # print(list_coins)
 # zero_size = list_coins.count(0)
 # if len(list_coins) - zero_size < zero_size:
-#     print(f'Нужно перевернуть {len(list_coins) - zerzero_sizeo} монеток')
+#     print(f'Нужно перевернуть {len(list_coins) - zero_size} монеток')
 # else:
 #     print(f'Нужно перевернуть {zero_size} монеток')
 
