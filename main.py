@@ -50,3 +50,38 @@
 #     print(res, end=' ')
 #     count += 1
 #     res = 2 ** count
+
+
+# holodos = 'cfghjhjgklrfgghrtyh 34576568aghjn k34t566ot7ikgnjhk078'
+# word = 'anton'
+# begin = 0
+# for letter_w in word:
+#     for i_h in range(begin, len(holodos)):
+#         if letter_w == holodos[i_h]:
+#             begin = i_h
+#             break
+#         else:
+#             print('антона здесь нет')
+#             break
+# else:
+# print('здесь есть антон')
+
+
+# from flask import Flask
+
+# app = Flask(__name__)
+
+
+# @app.route('/')
+# def main():
+#     return "<h1>Hello, world!</h1><br><a href='/index' >перейти на вторую страницу</a>"
+
+
+# @app.route('/index/<x>/<y>')
+# def index(x, y):
+#     return f'Результат : {int(x)+ int(y)}'
+#     # return 'Its my first project'
+
+
+# if __name__ == '__main__':
+#     app.run()

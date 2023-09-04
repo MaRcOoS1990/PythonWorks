@@ -68,3 +68,40 @@
 # print(res_list2)
 
 # print(len(res_list))
+
+# from random import randint
+
+# list_ran = [randint(0, 50) for i in range(10)]
+# print(list_ran)
+
+# for i in range(len(list_ran)):
+#     for j in range(len(list_ran)-1):
+#         if list_ran[j] > list_ran[j+1]:
+#             list_ran[j], list_ran[j+1] = list_ran[j+1], list_ran[j]
+# print(list_ran)
+
+
+# def quick_sort(list_random, start, end):
+#     left = start
+#     right = end
+#     pivot = list_random[(start+right)//2]
+#     while True:
+#         while list_random[left] < pivot:
+#             left += 1
+#         while list_random[right] > pivot:
+#             right -= 1
+#         if left <= right:
+#             if left < right:
+#                 list_random[left], list_random[right] = list_random[right], list_random[left]
+#             left += 1
+#             right -= 1
+#         if left > right:
+#             break
+#     if left < end:
+#         quick_sort(list_random, left, end)
+#     if right > start:
+#         quick_sort(list_random, start, right)
+
+
+# quick_sort(list_ran, 0, len(list_ran)-1)
+# print(list_ran)
