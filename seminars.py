@@ -1,4 +1,6 @@
 
+#! Seminar 3
+
 # my_list = [1, 1, 2, 4, 1, 4, 5]
 
 # size = int(input('Введите размер :'))
@@ -105,3 +107,33 @@
 
 # quick_sort(list_ran, 0, len(list_ran)-1)
 # print(list_ran)
+
+
+#! Seminar 4
+# Input: a a a b c a a d c d d
+# Output: a a_1 a_2 b c a_3 a_4 d c_1 d_1 d_2
+
+# new = 'a a a b c a a d c d d'.split()
+# print(new)
+# dict_1 = {}
+# for letter in new:
+#     if letter in dict_1:
+#         dict_1[letter] += 1
+#         print(letter+'_'+str(dict_1[letter]), end=' ')
+#     else:
+#         dict_1[letter] = 0
+#         print(letter, end=' ')
+
+
+# text = "She sells sea shells on the sea shore The shells that she sells are sea shells I'm sure So if she sells sea shells on the sea shore I'm sure that the shells are sea shore shells"
+# text_lower = set(text.lower().split())
+# print(len(text_lower))
+
+
+# n = int(input())
+# max_number = n
+# while n != 0:
+#     if max_number < n:
+#         max_number = n
+#     n = int(input())
+# print(max_number)
