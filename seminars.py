@@ -137,3 +137,57 @@
 #         max_number = n
 #     n = int(input())
 # print(max_number)
+
+
+# ! Семинар 5
+
+
+# def fib(num_1):
+#     if num_1 in [1, 2]:
+#         return 1
+#     return fib(num_1-1)+fib(num_1-2)
+# print(fib(7))
+
+# from random import *
+# n = 5
+# list_1 = [randint(1, 5) for _ in range(n)]
+# min1 = min(list_1)
+# max1 = max(list_1)
+
+# def change(min2, max2, list_2):
+#     for i in range(len(list_2)):
+#         if list_2[i] == max2:
+#             list_2[i] = min2
+#     return list_2
+
+# print(list_1)
+# print(min1, max1)
+# print(change(min1, max1, list_1))
+
+# def is_number_simple(num: int) -> bool:
+#     if num % 2 == 0 and num != 2:
+#         return False
+
+#     for i in range(3, int(num ** 0.5+1), 2):
+#         if num % i == 0:
+#             return False
+#         return True
+
+
+# n = int(input('Введите число: '))
+# if is_number_simple(num=n):
+#     print(f'Число {n} является простым')
+# else:
+#     print(f'Число {n} простым не является')
+
+
+# n = int(input('Введите количество чисел: '))
+
+
+# def print_num(n: int) -> bool:
+#     if n == 0:
+#         return ''
+#     line = input('Введите число: ')
+#     return print_num(n-1)+line
+
+# print(print_num(n))
