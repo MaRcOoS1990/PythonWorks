@@ -191,3 +191,64 @@
 #     return print_num(n-1)+line
 
 # print(print_num(n))
+
+
+# ! seminar 6
+import random
+
+# n = random.randint(5, 10)
+# m = random.randint(5, 10)
+
+# list_1 = [random.randint(1, 10)for i in range(n)]
+# list_2 = [random.randint(1, 10)for i in range(m)]
+
+# print(n, list_1)
+# print(m, list_2)
+
+# list_3 = [num for num in list_1 if num not in list_2]
+
+# print(list_3)
+
+# n = random.randint(5, 10)
+# list_1 = [random.randint(1, 10)for _ in range(n)]
+# print(n, list_1)
+# count = 0
+
+# for i in range(1, n-1):
+#     if list_1[i-1] < list_1[i] > list_1[i+1]:
+#         count += 1
+# print(count)
+
+# n = randint(5, 10)
+# list_1 = [randint(1, 10)for _ in range(n)]
+# print(n, list_1)
+
+# count = 0
+
+# for i in range(n-1):
+#     for j in range(i+1, n):
+#         if list_1[j] == list_1[i]:
+#             count += 1
+# print(count)
+
+
+# def sum_div(num: int):
+#     s = 1
+#     for div in range(2, int(num**0.5+1)):
+#         if num % div == 0:
+#             s += div+num//div
+#     return s
+
+
+# k = int(input('Введите число-->'))
+# result = []
+# for num1 in range(2, k):
+#     num2 = sum_div(num1)
+#     sum2 = sum_div(num2)
+#     if num1 == sum2 and num1 != num2:
+#         temp = (num1, num2)
+#         temp_res = min(temp), max(temp)
+#         if temp_res not in result:
+#             result.append(temp_res)
+# for tuple_i in result:
+#     print(*tuple_i)
