@@ -1,6 +1,6 @@
 
 #! Seminar 3
-
+import random
 # my_list = [1, 1, 2, 4, 1, 4, 5]
 
 # size = int(input('Введите размер :'))
@@ -194,7 +194,7 @@
 
 
 # ! seminar 6
-import random
+
 
 # n = random.randint(5, 10)
 # m = random.randint(5, 10)
@@ -252,3 +252,59 @@ import random
 #             result.append(temp_res)
 # for tuple_i in result:
 #     print(*tuple_i)
+
+#! Seminar 7
+
+# def transformation(x): return x
+
+# values = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]  # или любой другой список
+
+# transformed_values = list(map(transformation, values))
+
+# if values == transformed_values:
+#     print('ok')
+# else:
+#     print('fail')
+
+
+# def find_farthest_orbit(list_of_orbits):
+#     pi = 3.14
+#     # list_of_orbits = [pair for pair in list_of_orbits if pair[0] != pair[1]]
+#     list_of_orbits = list(filter(
+#         lambda pair: pair[0] != pair[1], list_of_orbits))
+#     res_list = [pair[0] * pair[1] * pi for pair in list_of_orbits]
+#     max_area = max(res_list)
+#     max_area_index = res_list.index(max_area)
+#     return list_of_orbits[max_area_index]
+
+
+# orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3)]
+# print(find_farthest_orbit(orbits))
+
+# def same_by(characteristic, objects):
+#     res_list = []
+#     for num in objects:
+#         if characteristic(num):
+#             res_list.append(num)
+#     if objects == res_list or res_list == []:
+#         return True
+#     return False
+
+# def same_by(characteristic, objects):
+#     res_list = list(map(characteristic, objects))
+#     if len(objects) == sum(res_list) or sum(res_list) == 0:
+#         return True
+#     return False
+
+# def same_by(characteristic, objects):
+#     res_list = list(filter(characteristic, objects))
+#     if objects == res_list or res_list == []:
+#         return True
+#     return False
+
+
+# values = [0, 2, 10, 6]
+# if same_by(lambda x: x % 2, values):
+#     print('same')
+# else:
+#     print('different')
