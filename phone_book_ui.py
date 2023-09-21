@@ -1,4 +1,4 @@
-from logger import *
+from phone_book_logger import *
 
 
 def interface():
