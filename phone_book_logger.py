@@ -33,5 +33,50 @@ def search_line():
             if searched in new_item[index]:
                 print(item)
                 print()
-        # file.seek(0)
-        # print(file.readlines())
+
+
+def deleted_contact():
+    print('Выберите вариант поиска:\n'
+          '1. Фамилия \n'
+          '2. Имя \n'
+          '3. Отчество \n'
+          '4. Телефон \n'
+          '5. Адрес ')
+    index = int(input('Введите вариант: '))-1
+    searched = input('Введиде данные для удаления:').title()
+    print()
+    with open('book.txt', 'r', encoding='utf-8') as file:
+        data = file.read().strip().split('\n\n')
+
+    for item in data:
+
+        if searched in item:
+            data.remove(item)
+
+    with open('book.txt', 'w', encoding='utf-8') as file:
+        file.write('\n'.join(data))
+
+
+def change_contact():
+    print('Выберите вариант изменения:\n'
+          '1. Фамилия \n'
+          '2. Имя \n'
+          '3. Отчество \n'
+          '4. Телефон \n'
+          '5. Адрес ')
+    index = int(input('Введите вариант: '))-1
+    searched = input('Ввеберите данные которые изменяем:').title()
+    item_change = input('Введите данные на которые изменяем:').title()
+    print()
+    new_data = []
+    with open('book.txt', 'r', encoding='utf-8') as file:
+        data = file.read().strip().split('\n\n')
+
+        for item in data:
+            new_item = item.replace('\n', ' ').split()
+            if new_item[index] == searched:
+                new_item[index] = item_change
+                new_data.append(
+                    f'{new_item[0]} {new_item[1]} {new_item[2]}\n{new_item[3]}\n{new_item[4]}\n')
+    with open('book.txt', 'w', encoding='utf-8') as file:
+        file.write('\n'.join(new_data))
